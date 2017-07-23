@@ -1,5 +1,3 @@
-console.log("db: " + process.env.DBCONFIG);
-console.log("secret: " + process.env.SECRET);
 
 // Get dependencies
 const path = require('path');
