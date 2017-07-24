@@ -36,7 +36,7 @@ app.use(cors(corsOptions));
 app.use(function (req, res, next) {
 
     // Website you wish to allow to connect
-    res.setHeader('Access-Control-Allow-Origin', 'https://instant-chat-ui.herokuapp.com/' );
+    res.setHeader('Access-Control-Allow-Origin', 'https://instant-chat-ui.herokuapp.com' );
 
     // Request methods you wish to allow
     res.setHeader('Access-Control-Allow-Methods', 'GET, POST, OPTIONS, PUT, PATCH, DELETE');
