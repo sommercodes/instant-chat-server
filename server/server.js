@@ -21,8 +21,8 @@ var users = [];
 var whitelist = [
     'http://localhost:4200',
     'http://localhost:3000',
-    'https://instant-chat-server.herokuapp.com/',
-    'https://instant-chat-ui.herokuapp.com/'
+    'https://instant-chat-server.herokuapp.com',
+    'https://instant-chat-ui.herokuapp.com'
 ];
 var corsOptions = {
     origin: function(origin, callback){
@@ -32,6 +32,7 @@ var corsOptions = {
     credentials: true
 };
 app.use(cors(corsOptions));
+/*
 // Add headers
 app.use(function (req, res, next) {
 
@@ -51,6 +52,7 @@ app.use(function (req, res, next) {
     // Pass to next layer of middleware
     next();
 });
+  */
 
 // use body parser so we can get info from POST and/or URL parameters
 app.use(bodyParser.urlencoded({ extended: false }));
