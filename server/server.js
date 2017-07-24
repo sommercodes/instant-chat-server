@@ -20,7 +20,9 @@ var users = [];
 
 var whitelist = [
     'http://localhost:4200',
-    'http://localhost:3000'
+    'http://localhost:3000',
+    'https://instant-chat-server.herokuapp.com/',
+    'https://instant-chat-ui.herokuapp.com/'
 ];
 var corsOptions = {
     origin: function(origin, callback){
