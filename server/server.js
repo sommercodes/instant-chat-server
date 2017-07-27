@@ -10,6 +10,8 @@ var cors    = require('cors');
 var config = require('../config/config'); // get our config file
 
 var authRoutes   = require('./routes/authentication');
+var msgRoutes = require('./routes/messages');
+var msgUtils =  require('./utils/messages');
 var app = express();
 var server = require('http').Server(app);
 
@@ -63,7 +65,7 @@ app.use(morgan('dev'));
 
 
 // apply the routes to our application with the prefix /api
-app.use('/api', authRoutes);
+app.use('/api', authRoutes, msgRoutes);
 
 app.get('/', function(req, res) {
   res.send('welcome to instant chat');
@@ -82,9 +84,11 @@ io.on('connection', function(socket){
     // we tell the client to execute 'new message'
     console.log(data.msg);
     io.sockets.emit('new message', {
-      msg: data.msg,
+      message: data.msg,
       user: data.user
     });
+    msgUtils({message: data.msg, user: data.user});
+
   });
 
   // when the client emits 'user joined', this listens and executes
