@@ -10,9 +10,9 @@ deploy:
   access_key_id: $ACCESSKEYID
   secret_access_key:
     secure: "$SECRETACCESSKEY"
-  region: "us-east-1"  
-  app: "example-app-name"
-  env: "example-app-environment"
+  region: "ca-central-1"  
+  app: "test2"
+  env: "Test2-env"
   bucket_name: "the-target-S3-bucket"
 
 before_script:
