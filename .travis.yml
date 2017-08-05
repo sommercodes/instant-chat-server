@@ -13,7 +13,7 @@ deploy:
   region: "ca-central-1"  
   app: "test2"
   env: "Test2-env"
-  bucket_name: "Test2-env.cwpvt3dmpe.ca-central-1"
+  bucket_name: "ca-central-1"
 
 before_script:
   - docker build -t chat-server .
