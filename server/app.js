@@ -68,7 +68,7 @@ app.use(morgan('dev'));
 app.use('/api', authRoutes, msgRoutes);
 
 app.get('/', function(req, res) {
-  res.send('welcome to instant chat');
+  res.send('welcome to instant chat!!!');
 }); 
 
 server.listen(port);
