@@ -5,15 +5,15 @@ sudo: required
 services:
   - docker
 
-# deploy:
-#   provider: elasticbeanstalk
-#   access_key_id: $ACCESSKEYID
-#   secret_access_key:
-#     secure: "$SECRETACCESSKEY"
-#   region: "ca-central-1"  
-#   app: "test2"
-#   env: "Test2-env"
-#   bucket_name: "elasticbeanstalk-ca-central-1-882371129764"
+deploy:
+  provider: elasticbeanstalk
+  access_key_id: $ACCESSKEYID
+  secret_access_key:
+    secure: "$SECRETACCESSKEY"
+  region: "ca-central-1"  
+  app: "instant-chat-server"
+  env: "instant-chat-server"
+  bucket_name: "elasticbeanstalk-ca-central-1-882371129764"
 
 
 

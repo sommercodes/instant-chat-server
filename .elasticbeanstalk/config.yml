@@ -2,6 +2,10 @@ branch-defaults:
   master:
     environment: instant-chat-server
     group_suffix: null
+environment-defaults:
+  instant-chat-server:
+    branch: null
+    repository: null
 global:
   application_name: instant-chat-server
   branch: null
