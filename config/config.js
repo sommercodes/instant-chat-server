@@ -1,6 +1,6 @@
 module.exports = {
 
-    'secret': process.env.SECRET,
-    'database': process.env.DBCONFIG
+    'secret': 'secret',
+    'database': 'mongodb://chat-server:secret@ds163612.mlab.com:63612/chat-server'
 
 };
