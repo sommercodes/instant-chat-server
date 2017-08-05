@@ -1,4 +1,13 @@
 language: node_js
 
+sudo: required
+
+services:
+  - docker
+
 before_script:
-  - npm install
+  - docker build -t chat-server .
+  - docker images
+  - docker run -p 4000:8080 -e SECRET=$SECRET -e DBCONFIG=$DBCONFIG -d chat-server
+  - sleep 15
+  - docker ps
