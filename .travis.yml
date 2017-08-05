@@ -14,6 +14,8 @@ deploy:
   app: "instant-chat-server"
   env: "instant-chat-server"
   bucket_name: "elasticbeanstalk-ca-central-1-882371129764"
+  on:
+    branch: master
 
 
 
