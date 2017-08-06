@@ -22,6 +22,7 @@ var users = [];
 
 var whitelist = [
     'http://localhost:4200',
+    'http://192.168.99.100:4000',
     'http://localhost:3000',
     'https://instant-chat-server.herokuapp.com',
     'https://instant-chat-ui.herokuapp.com'
